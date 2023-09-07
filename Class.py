@@ -32,6 +32,8 @@ class Usuario:
             print(f"{seguido.Nombre}")
 
     #Generar el Metodo para dar UnFollow (Dejar de Seguir)
+    def UnFollow(self, user):
+        pass
 
 hinchaX = Usuario(1234, "Pedrito", "pedroPunk17@gmail.com", "12345", "+56912345678", "publico")
 cuentaColoColo = Usuario(5674, "ColoColoOficial", "colocolochile@colocolo.cl", "asyzxYash#", "+56285478963", "publico")
