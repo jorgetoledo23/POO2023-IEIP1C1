@@ -20,6 +20,7 @@ class Boleta:
 
     #Metodos
 
+
 class Factura:
     pass
     #Atributos
