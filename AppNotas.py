@@ -4,7 +4,12 @@ from typing import List
 print("Bienvenido al Sistema de Notas")
 
 listaAlumnos:List[Alumno] = []
-#listaAlumnos = []
+
+def BuscarAlumnoPorRut(rut:str):
+    for alumno in listaAlumnos:
+        if(alumno.Rut == rut):
+            return alumno
+
 
 while True:
     os.system("cls")
@@ -32,4 +37,31 @@ while True:
 
     if(op == "2"):
         #Ingreso de Notas
-        pass
+        os.system("cls")
+        rut = input("Ingresa Rut del Alumno: ")
+        alumno = BuscarAlumnoPorRut(rut)
+        if(alumno == None):
+            input("Alumno NO Encontrado!")
+        else:
+            alumno.AddNota(float(input("Ingresa la Nota: ")))
+            input("Nota Ingresada Correctamente!")
+    
+    if(op == "3"):
+        os.system("cls")
+        rut = input("Ingresa Rut del Alumno: ")
+        alumno = BuscarAlumnoPorRut(rut)
+        if(alumno == None):
+            input("Alumno NO Encontrado!")
+        else:
+            alumno.getInfo()
+            input()
+
+    if(op == "5"):
+        os.system("cls")
+        rut = input("Ingresa Rut del Alumno: ")
+        alumno = BuscarAlumnoPorRut(rut)
+        if(alumno == None):
+            input("Alumno NO Encontrado!")
+        else:
+            alumno.VerPromedio()
+            input()

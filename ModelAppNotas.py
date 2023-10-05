@@ -20,9 +20,20 @@ class Alumno:
             input("No tienes notas")
 
     
-    def AddNota(self, nota):
+    def AddNota(self, nota:float):
         self.Notas.append(nota)
 
+    def VerPromedio(self):
+        if (len(self.Notas) > 0):
+            print(self.getNombre())
+            total = 0
+            for nota in self.Notas:
+                total += nota
+            print(f"Promedio: { total / len(self.Notas)  }")
+            input()
+        else:
+            print(self.getNombre())
+            input("El Alumno No posee Notas!")
 
 
 
