@@ -8,10 +8,13 @@ listaAlumnos:List[Alumno] = []
 
 while True:
     os.system("cls")
-    print("[1] - Ingresar Alumno")
-    print("[2] - Ingresar Nota")
+    print("[1] - Ingresar Alumno al Sistema")
+    print("[2] - Ingresar Nota al Sistema")
     print("[3] - Ver Info Alumno")
     print("[4] - Ver Todos los Alumnos")
+    print("[5] - Ver el Promedio de un Alumno")
+    print("[0] - Salir")
+
     op = input("Selecciona una Opcion: ")
 
     if(op == "1"):
