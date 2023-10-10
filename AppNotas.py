@@ -43,7 +43,7 @@ while True:
         if(alumno == None):
             input("Alumno NO Encontrado!")
         else:
-            alumno.AddNota(float(input("Ingresa la Nota: ")))
+            alumno.AddNota(4.5)
             input("Nota Ingresada Correctamente!")
     
     if(op == "3"):
