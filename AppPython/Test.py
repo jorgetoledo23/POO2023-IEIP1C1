@@ -36,7 +36,6 @@ class Universo:
     def getCodigo(self)->str:
         return self.__Cod_Universo
 
-
 dao = DAO()
 
 while True:
